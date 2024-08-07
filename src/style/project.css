@@ -12,6 +12,7 @@
     row-gap: 1em;
 }
 .project{
+    position: relative;
     display: inline-flex;
     flex-direction: column;
     gap: 10px;
@@ -23,21 +24,33 @@
     border: 1px solid black;
     cursor: pointer;
     transition: transform .1s ease-in-out;
+    
 }
 .project:hover{
-    transform: scale(1.1,1.1);
+    transform: scale(1.03,1.03);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-    transition: transform .25s ease-in-out;
+    z-index: 1;
 }
 
 .project img {
-    flex: 0 0 80%;
+    flex: 4;
     
     border-radius: 10px 10px 0 0;
+    z-index: 0;
 
 }
 .project p{
-    flex: 0 0 20%;
+    flex: 1;
     text-align: center;
 
+}
+
+.detaille{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
 }
