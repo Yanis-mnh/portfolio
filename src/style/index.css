@@ -1,6 +1,7 @@
 
 :root{
-    --background-color :#FEFAE0;
+    --background-color :#F5EDED;
+    --primary-color :#7FA1C3
 }
 
 
@@ -20,19 +21,27 @@ body{
 
 
 ul{
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2em;
     padding: 1em;
-    background-color: pink;
+    background-color: var(--primary-color);
 }
-
+.active_page{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--background-color);
+    width: 4em;
+    height: 2px;
+}
 li{
+    position: relative;
     list-style: none;
-    background-color: white;
     padding: 1em 2em;
-    border-radius: .5em 0 .5em 0;
     cursor: pointer;
 }
 
