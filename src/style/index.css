@@ -30,6 +30,7 @@ ul{
     background-color: var(--primary-color);
 }
 .active_page{
+    display: block;
     position: absolute;
     top: 80%;
     left: 50%;
@@ -37,6 +38,9 @@ ul{
     background-color: var(--background-color);
     width: 4em;
     height: 2px;
+}
+.unactive_page{
+    display: none;
 }
 li{
     position: relative;
