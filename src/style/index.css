@@ -18,16 +18,37 @@ body{
 }
 
 
-
-
-ul{
-    position: relative;
+nav{
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2em;
+    
+   
+}
+
+ul{
+    position: sticky;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
     padding: 1em;
-    background-color: var(--primary-color);
+    gap: 2em;
+    background: var(--primary-color);
+    border-radius: 0;
+    transition: width .25s ease-in-out , border-radius .5s ease-in-out;
+
+}
+ul.scroll{
+    position: sticky;
+    display: inline-flex;
+    justify-content: center;
+    width: 50%;
+    gap: 2em;
+    background: var(--primary-color);
+    border-radius: 0 0 10px 10px ;
+    transition: width .25s ease-in-out,border-radius .5s ease-in-out;
+    
 }
 .active_page{
     display: block;
@@ -38,10 +59,9 @@ ul{
     background-color: var(--background-color);
     width: 4em;
     height: 2px;
+    transition: background-color .25s ease-in-out;
 }
-.unactive_page{
-    display: none;
-}
+
 li{
     position: relative;
     list-style: none;

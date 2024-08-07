@@ -1,48 +1,43 @@
 import { useState } from "react";
 
-const handel_click = (page: number) => {
-  const test = is_page.map((i: boolean) => (i === true ? true : false));
+const NavBar = () => {
+  const [activePage, setActivePage] = useState([false, false, false]);
 
-  set_is_page(test);
-  console.log(test);
-};
-
-const [is_page, set_is_page] = useState([true, false, false]);
-console.log(is_page);
-function NavBar() {
+  const handleClick = (page: number) => {
+    const newActivePage = activePage.map((_, index) => index === page);
+    setActivePage(newActivePage);
+    console.log(newActivePage);
+  };
+  const [test, set_test] = useState(false);
   return (
     <nav>
-      <ul>
-        <li>
+      <ul
+        className={test ? "scroll" : ""}
+        onClick={() => {
+          set_test(!test);
+        }}
+      >
+        <li onClick={() => handleClick(0)}>
           About
           <div
-            className={is_page[0] ? "active_page" : "unactive_page"}
-            onClick={() => {
-              handel_click(0);
-            }}
+            className={activePage[0] ? "active_page" : "unactive_page"}
           ></div>
         </li>
-        <li>
+        <li onClick={() => handleClick(1)}>
           Contact
           <div
-            className={is_page[1] ? "active_page" : "unactive_page"}
-            onClick={() => {
-              handel_click(1);
-            }}
+            className={activePage[1] ? "active_page" : "unactive_page"}
           ></div>
         </li>
-        <li>
+        <li onClick={() => handleClick(2)}>
           Project
           <div
-            className={is_page[2] ? "active_page" : "unactive_page"}
-            onClick={() => {
-              handel_click(2);
-            }}
+            className={activePage[2] ? "active_page" : "unactive_page"}
           ></div>
         </li>
       </ul>
     </nav>
   );
-}
+};
 
 export default NavBar;
