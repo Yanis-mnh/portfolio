@@ -1,7 +1,12 @@
 
 :root{
-    --background-color :#F5EDED;
-    --primary-color :#7FA1C3
+    --background-color :#ffffff;
+    --primary-color :#2c3e50 ;
+    --secondary-color : #ecf0f1;
+    --accent-color: #e74c3c ;
+    --dark-accent-color:#c0392b;
+    --text-color: #2c3e50;
+
 }
 
 
@@ -36,7 +41,7 @@ ul{
     gap: 2em;
     background: var(--primary-color);
     border-radius: 0;
-    transition: width .25s ease-in-out , border-radius .5s ease-in-out;
+    transition: width .25s ease-in-out , border-radius .5s ease-in-out,padding .25s ease-in-out;
 
 }
 ul.scroll{
@@ -44,10 +49,10 @@ ul.scroll{
     display: inline-flex;
     justify-content: center;
     width: 50%;
+    padding: .8em;
     gap: 2em;
-    background: var(--primary-color);
     border-radius: 0 0 10px 10px ;
-    transition: width .25s ease-in-out,border-radius .5s ease-in-out;
+    transition: width .25s ease-in-out,border-radius .5s ease-in-out,padding .25s ease-in-out;
     
 }
 .active_page{
@@ -67,10 +72,22 @@ li{
     list-style: none;
     padding: 1em 2em;
     cursor: pointer;
+    color: var(--secondary-color);
 }
 
 
+.button {
+    background-color: var(--accent-color); /* Accent Color */
+    color: var(--background-color); /* Background Color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
+  .button:hover{
+    background-color: var(--dark-accent-color);
+  }
 
 
 
