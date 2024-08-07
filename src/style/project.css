@@ -12,11 +12,14 @@
     row-gap: 1em;
 }
 .project{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin-top: 1em;
-    height: 100px;
-    width: 200px;
+    height: 200px;
+    width: 150px;
     border-radius: 10px;
-    background-color: #B4D6CD;
+    border: 1px solid black;
     cursor: pointer;
     transition: transform .1s ease-in-out;
 }
@@ -24,4 +27,15 @@
     transform: scale(1.1,1.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
     transition: transform .25s ease-in-out;
+}
+
+.project img {
+    flex: 0 0 80%;
+    border-radius: 10px 10px 0 0;
+
+}
+.project p{
+    flex: 0 0 20%;
+    text-align: center;
+
 }

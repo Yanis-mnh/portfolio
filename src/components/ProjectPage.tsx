@@ -5,13 +5,16 @@ const ProjectPage = () => {
       <div className="main_activity">
         <div className="projects">
           <div className="project">
-            <a></a>
+            <img src="src/assets/img1.webp" />
+            <p>test</p>
           </div>
           <div className="project">
-            <a></a>
+            <img src="src/assets/img2.webp" alt="brrrr" />
+            <p>test 2</p>
           </div>
           <div className="project">
-            <a></a>
+            <img src="src/assets/img3.avif" alt="brrrr" />
+            <p>test 2</p>
           </div>
           <div className="project">
             <a></a>
