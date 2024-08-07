@@ -1,0 +1,27 @@
+.main_activity{
+    display: flex;
+    justify-content: center;
+    
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    justify-content: center;
+    column-gap: 2em;
+    row-gap: 1em;
+}
+.project{
+    margin-top: 1em;
+    height: 100px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #6482AD;
+    cursor: pointer;
+    transition: transform .1s ease-in-out;
+}
+.project:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform .25s ease-in-out;
+}
