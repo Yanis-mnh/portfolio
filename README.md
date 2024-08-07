@@ -1,4 +1,4 @@
-# Yanis' Portfolio
+# Yanix Portfolio
 
 Welcome to my portfolio. Here you’ll find a collection of my work in software development and game creation.
 
