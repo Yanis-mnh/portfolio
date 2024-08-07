@@ -32,7 +32,7 @@ li{
     list-style: none;
     background-color: white;
     padding: 1em 2em;
-    border-radius: 1em;
+    border-radius: .5em 0 .5em 0;
     cursor: pointer;
 }
 
