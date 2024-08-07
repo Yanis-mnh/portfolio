@@ -12,12 +12,13 @@
     row-gap: 1em;
 }
 .project{
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     gap: 10px;
     margin-top: 1em;
-    height: 200px;
-    width: 150px;
+    
+    height: 250px;
+    width: 200px;
     border-radius: 10px;
     border: 1px solid black;
     cursor: pointer;
@@ -31,6 +32,7 @@
 
 .project img {
     flex: 0 0 80%;
+    
     border-radius: 10px 10px 0 0;
 
 }

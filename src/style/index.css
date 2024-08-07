@@ -78,8 +78,8 @@ li{
 
 
 .button {
-    background-color: var(--accent-color); /* Accent Color */
-    color: var(--background-color); /* Background Color */
+    background-color: var(--accent-color); 
+    color: var(--background-color); 
     padding: 10px 20px;
     border: none;
     border-radius: 5px;

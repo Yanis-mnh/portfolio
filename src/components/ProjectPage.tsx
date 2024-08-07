@@ -6,10 +6,10 @@ const ProjectPage = () => {
         <div className="projects">
           <div className="project">
             <img src="src/assets/img1.webp" />
-            <p>test</p>
+            <p>E-comerce web app</p>
           </div>
           <div className="project">
-            <img src="src/assets/img2.webp" alt="brrrr" />
+            <img src="" alt="brrrr" />
             <p>test 2</p>
           </div>
           <div className="project">
