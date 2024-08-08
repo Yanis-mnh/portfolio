@@ -39,6 +39,7 @@ const NavBar = () => {
             onClick={() => {
               handleClick(1);
               ScrollToSection("project");
+              set_test(true);
             }}
           >
             Project

@@ -6,7 +6,7 @@
     width: 100vw;
     background-color: var(--background-color);
     color: var(--background-color);
-    
+    margin-top: 50px;
     
 }
 .contact_container{
@@ -17,6 +17,7 @@
     height: 80%;
     width: 60%;
     border-radius: 5px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 .social_media{
     border-right: 2px dashed black;

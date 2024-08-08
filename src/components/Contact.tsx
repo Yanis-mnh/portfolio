@@ -5,13 +5,13 @@ const Contact = () => {
       <div className="contact" id="contact">
         <div className="contact_container">
           <div className="social_media">
-            <a>
+            <a href="https://www.instagram.com/yanix.code/" target="blank">
               <img src="src/assets/icons/instagram.png" alt="facebook_icon" />
             </a>
             <a>
               <img src="src/assets/icons/facebook.png" alt="insta_icon" />
             </a>
-            <a>
+            <a href="mailto:yanix.code@gmail.com">
               <img src="src/assets/icons/gmail.png" alt="gmail_icon" />
             </a>
           </div>
