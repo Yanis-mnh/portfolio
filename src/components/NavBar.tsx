@@ -22,12 +22,7 @@ const NavBar = () => {
   return (
     <>
       <nav id="navbar">
-        <ul
-          className={test ? "scroll" : ""}
-          onClick={() => {
-            set_test(!test);
-          }}
-        >
+        <ul className={test ? "scroll" : ""}>
           <li
             onClick={() => {
               ScrollToSection("about");
@@ -64,7 +59,10 @@ const NavBar = () => {
           </li>
         </ul>
       </nav>
-      <GoUpBtn onButtonClick={ScrollToSection} />
+      <GoUpBtn
+        onButtonClick={ScrollToSection}
+        changeNavActivePage={handleClick}
+      />
     </>
   );
 };
