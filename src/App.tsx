@@ -5,12 +5,11 @@ import ProjectPage from "./components/ProjectPage";
 function App() {
   return (
     <>
-      <header>
+      <body>
         <NavBar />
-
         <ProjectPage />
         <Contact />
-      </header>
+      </body>
     </>
   );
 }

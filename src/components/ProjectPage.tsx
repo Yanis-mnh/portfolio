@@ -6,7 +6,7 @@ interface ProjectProps {
   src: string;
   alt: string;
   project_title: string;
-  children?: ReactNode;
+  children: ReactNode;
 }
 const Project: React.FC<ProjectProps> = ({
   src,
@@ -53,12 +53,40 @@ const ProjectPage = () => {
             src="src/assets/img3.avif"
             alt="img snake"
             project_title="Snake compiler"
-          />
+          >
+            <DetailleCarte description="" technologis="" link="" />
+          </Project>
           <Project
             src="src/assets/snake.png"
             alt="img snake"
             project_title="Snake compiler"
-          />
+          >
+            <DetailleCarte description="" technologis="" link="" />
+          </Project>
+
+          <Project
+            src="src/assets/snake.png"
+            alt="img snake"
+            project_title="Snake compiler"
+          >
+            <DetailleCarte description="" technologis="" link="" />
+          </Project>
+
+          <Project
+            src="src/assets/snake.png"
+            alt="img snake"
+            project_title="Snake compiler"
+          >
+            <DetailleCarte description="" technologis="" link="" />
+          </Project>
+
+          <Project
+            src="src/assets/snake.png"
+            alt="img snake"
+            project_title="Snake compiler"
+          >
+            <DetailleCarte description="" technologis="" link="" />
+          </Project>
         </div>
       </div>
     </>

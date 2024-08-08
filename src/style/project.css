@@ -1,15 +1,17 @@
 .main_activity{
     display: flex;
     justify-content: center;
+    height: 90vh;
     
+    overflow: scroll;
 }
 .projects{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    
     justify-content: center;
     column-gap: 2em;
     row-gap: 1em;
+    overflow: visible;
 }
 .project{
     position: relative;
@@ -52,18 +54,26 @@
     top: 0;
     padding: 10px;
     border: none;
-    height: 0%;
+    height: 100%;
+    width: 0%;
     
 }
 
 .project:hover  .detaille {
+    
     visibility: visible;
     overflow: hidden;
     background-color: var(--background-color);
-    height: 100%;
-    
-    transition: height .1s ease-in-out;
+    color: var(--text-color);
+    width: 100%;
+    transition: width .1s ease-in-out;
 }
 .detaille p{
     text-align: left;
+}
+.detaille a{
+    color: var(--text-color);
+}
+.carte_title{
+    text-decoration: underline;
 }

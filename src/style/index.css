@@ -20,8 +20,11 @@
 
 body{
     background-color: var(--background-color);
+    
 }
-
+header{
+    font-family: 'Roboto' ,sans-serif ;
+}
 
 nav{
     
@@ -30,10 +33,10 @@ nav{
     justify-content: center;
     position: sticky;
     top: 0;
-   z-index: 2;
+    z-index: 2;
 }
 
-ul{
+nav ul{
     position: sticky;
     display: inline-flex;
     justify-content: center;
@@ -45,7 +48,7 @@ ul{
     transition: width .25s ease-in-out , border-radius .5s ease-in-out,padding .25s ease-in-out;
 
 }
-ul.scroll{
+nav ul.scroll{
     position: sticky;
     display: inline-flex;
     justify-content: center;
@@ -69,7 +72,7 @@ ul.scroll{
 
 }
 
-li{
+nav ul li{
     position: relative;
     list-style: none;
     padding: 1em 2em;
@@ -77,7 +80,7 @@ li{
     color: var(--secondary-color);
 }
 
-li:hover{
+nav ul li:hover{
     transform: scale(1.1);
 }
 
@@ -91,12 +94,12 @@ li:hover{
     cursor: pointer;
   }
 
-  .button:hover{
+.button:hover{
     background-color: var(--dark-accent-color);
-  }
+}
 
 a{
-    color: var(--text-color);
+    text-decoration: none;
 }
 
 

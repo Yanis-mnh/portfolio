@@ -13,13 +13,13 @@ const DetailleCarte: React.FC<DetailleCarteProps> = ({
     <>
       <div className="detaille">
         <p>
-          <b>Description: </b> {description}
+          <b className="carte_title">Description: </b> {description}
         </p>
         <p>
-          <b>Technologies:</b> {technologis}
+          <b className="carte_title">Technologies:</b> {technologis}
         </p>
         <a href={link}>
-          <b>link: </b>
+          <b className="carte_title">link: </b>
           {link}
         </a>
       </div>
