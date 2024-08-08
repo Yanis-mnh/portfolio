@@ -8,7 +8,10 @@ const Contact = () => {
             <a href="https://www.instagram.com/yanix.code/" target="blank">
               <img src="src/assets/icons/instagram.png" alt="facebook_icon" />
             </a>
-            <a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61564108437013&locale=fr_FR"
+              target="blank"
+            >
               <img src="src/assets/icons/facebook.png" alt="insta_icon" />
             </a>
             <a href="mailto:yanix.code@gmail.com">
