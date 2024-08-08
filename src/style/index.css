@@ -95,7 +95,9 @@ li:hover{
     background-color: var(--dark-accent-color);
   }
 
-
+a{
+    color: var(--text-color);
+}
 
 
 

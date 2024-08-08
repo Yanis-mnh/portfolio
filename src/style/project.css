@@ -17,12 +17,11 @@
     flex-direction: column;
     gap: 10px;
     margin-top: 1em;
-    
+    overflow: hidden;
     height: 250px;
     width: 200px;
     border-radius: 10px;
-    border: 1px solid black;
-    cursor: pointer;
+    border: 1px solid var(--background-color);
     transition: transform .1s ease-in-out;
     
 }
@@ -46,23 +45,23 @@
 }
 
 .detaille{
-    
+    color: var(--text-color);
     visibility: hidden;
     position: absolute;
     left: 0;
-    top: 100%;
+    top: 0;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0);
-    margin-top: 3px;
-    border-radius: 5px;
-    border: 1px solid var(--primary-color );
+    border: none;
     height: 0%;
     
 }
-.project:hover  .detaille{
+
+.project:hover  .detaille {
     visibility: visible;
+    overflow: hidden;
     background-color: var(--background-color);
     height: 100%;
+    
     transition: height .1s ease-in-out;
 }
 .detaille p{
