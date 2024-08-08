@@ -25,7 +25,7 @@ const Project: React.FC<ProjectProps> = ({
 const ProjectPage = () => {
   return (
     <>
-      <div className="main_activity">
+      <div className="main_activity" id="project">
         <div className="projects">
           <Project
             src="src/assets/snake.png"
