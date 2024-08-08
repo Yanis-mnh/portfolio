@@ -1,3 +1,4 @@
+import Contact from "./components/Contact";
 import NavBar from "./components/NavBar";
 import ProjectPage from "./components/ProjectPage";
 
@@ -6,7 +7,9 @@ function App() {
     <>
       <header>
         <NavBar />
+
         <ProjectPage />
+        <Contact />
       </header>
     </>
   );
