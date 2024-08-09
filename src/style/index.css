@@ -63,6 +63,12 @@ nav:hover ul{
     border-radius: 0;
     transition: width .25s ease-in-out , border-radius .5s ease-in-out;
 }
+.isTop{
+    opacity: 1;
+    width: 100%;
+    border-radius: 0;
+    transition: width .25s ease-in-out , border-radius .5s ease-in-out, opacity .15s ease-in-out;
+}
 .active_page{
     display: block;
     position: absolute;
@@ -118,7 +124,14 @@ nav ul li:hover{
     transform: scale(1.05);
 }
 a{
-    text-decoration: none;
+    color: var(--text-color);
+    background-color: #c03a2b3d;
+    border-radius: 2px;
+    
+}
+a:hover{
+    background-color: rgba(231, 77, 60, 0.712);
+    transition: background-color .1s ease-in-out;
 }
 
 

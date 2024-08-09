@@ -2,12 +2,14 @@ interface DetailleCarteProps {
   description: string;
   technologis: string;
   link: string;
+  linkName?: string;
 }
 
 const DetailleCarte: React.FC<DetailleCarteProps> = ({
   description,
   technologis,
   link,
+  linkName = "GitHub repo",
 }) => {
   return (
     <>
@@ -20,7 +22,7 @@ const DetailleCarte: React.FC<DetailleCarteProps> = ({
         </p>
         <a href={link}>
           <b className="carte_title">link: </b>
-          {link}
+          {linkName}
         </a>
       </div>
     </>

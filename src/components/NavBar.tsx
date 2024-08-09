@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import GoUpBtn from "./GoUpBtn";
 
 const NavBar = () => {
@@ -9,7 +9,6 @@ const NavBar = () => {
     setActivePage(newActivePage);
     console.log(newActivePage);
   };
-  const [test, set_test] = useState(false);
 
   const ScrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -18,11 +17,26 @@ const NavBar = () => {
     }
     console.log(element);
   };
+  const [isTop, setIsTop] = useState(true);
+  useEffect(() => {
+    const handelScroll = () => {
+      if (window.scrollY > 0) {
+        setIsTop(false);
+      } else {
+        setIsTop(true);
+      }
+    };
+    window.addEventListener("scroll", handelScroll);
+    console.log(isTop);
+    return () => {
+      window.removeEventListener("scroll", handelScroll);
+    };
+  }, []);
 
   return (
     <>
-      <nav id="navbar">
-        <ul className={test ? "scroll" : ""}>
+      <nav id="navbar" className={isTop ? "isTop" : ""}>
+        <ul className={isTop ? "isTop" : ""}>
           <li
             onClick={() => {
               ScrollToSection("about");
@@ -39,7 +53,6 @@ const NavBar = () => {
             onClick={() => {
               handleClick(1);
               ScrollToSection("project");
-              set_test(true);
             }}
           >
             Project

@@ -68,9 +68,7 @@
 .detaille p{
     text-align: left;
 }
-.detaille a{
-    color: var(--text-color);
-}
+
 .carte_title{
     text-decoration: underline;
 }
