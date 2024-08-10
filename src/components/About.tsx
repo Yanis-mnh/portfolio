@@ -3,7 +3,15 @@ const About = () => {
   return (
     <>
       <div className="about" id="about">
-        <p>about me</p>
+        <div className="about_me">
+          <h2>About me</h2>
+          <p>
+            Hi, I'm Yanis, a master's student in Information Systems and Data.
+            With a strong passion for video game development and software
+            creation, I enjoy turning complex problems into simple, elegant
+            solutions.
+          </p>
+        </div>
       </div>
     </>
   );

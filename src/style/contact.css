@@ -59,3 +59,9 @@
     max-width: 80%;
     max-height: 40%;
 }
+.social_media a{
+    background-color: transparent;
+}
+.social_media a:hover{
+    background-color: transparent;
+}
