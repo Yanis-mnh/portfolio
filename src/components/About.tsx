@@ -3,7 +3,7 @@ const About = () => {
   return (
     <>
       <div className="about" id="about">
-        <div className="about_me">
+        <div className="div1_about_me">
           <h2>About me</h2>
           <p>
             Hi, I'm Yanis, a master's student in Information Systems and Data.
@@ -11,6 +11,24 @@ const About = () => {
             creation, I enjoy turning complex problems into simple, elegant
             solutions.
           </p>
+        </div>
+        <div className="div2_skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>
+              Programming Languages: HTML, CSS, JavaScript, PHP, React, C/C++,
+              Java, GDScript, Python, Matlab.
+            </li>
+            <li>Tools & Technologies: AIVA, Zsh, Ubuntu, Git.</li>
+          </ul>
+        </div>
+        <div className="div3_education">
+          <h2>Education</h2>
+          Master's Degree in Systèmes d'Information et Données University Name |
+          2024 - Present Focus on information systems, data analysis, and
+          software development. Bachelor's Degree in Computer Systems University
+          Name | Completed in 2024 Graduated without any retakes; final project:
+          Intelligent Video Game for Children.
         </div>
       </div>
     </>

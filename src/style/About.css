@@ -1,5 +1,60 @@
 .about{
-    height: 100vh;
+    height: auto;
     width: 100vw;
+    height: 100vh;
+    display: grid;
+
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+    margin-bottom: 4em;
+}
+/* Desktop Layout: 3 Columns */
+@media(min-width: 768px) {
+    .about {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, auto); 
+    }
     
+    .div1_about_me {
+      grid-area: 1 / 1 / 3 / 2;
+    }
+    .div2_skills {
+      grid-area: 3 / 1 / 4 / 2;
+    }
+    .div3_education { 
+      grid-area: 1 / 2 / 4 / 3; 
+    }
+  }
+  
+/* Mobile Layout */
+@media(max-width: 767px) {
+    .about {
+      grid-template-columns: repeat(1fr);
+      grid-template-rows: auto; /* Automatic row height */
+      height: auto;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    }
+    .div1_about_me,.div2_skills,.div3_education{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .div1_about_me {
+      grid-area: auto; /* Let items stack automatically */
+    }
+    .div2_skills {
+      grid-area: auto;
+    }
+    .div3_education { 
+      grid-area: auto;
+    }
+  }
+    
+.div1_about_me,.div2_skills,.div3_education{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
