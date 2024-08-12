@@ -28,7 +28,7 @@ const ProjectPage = () => {
       <div className="main_activity" id="project">
         <div className="projects">
           <Project
-            src="src/assets/img2.webp"
+            src="./img2.webp"
             alt="img "
             project_title="Intelligent Video Game for Children"
           >
