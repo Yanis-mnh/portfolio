@@ -4,12 +4,14 @@
     
 }
 .projects{
+    
     display: grid;
     grid-template-columns: repeat(3,1fr);
     justify-content: center;
     column-gap: 2em;
     row-gap: 1em;
     overflow: visible;
+    background-color: black;
 }
 .project{
     position: relative;
@@ -71,4 +73,13 @@
 
 .carte_title{
     text-decoration: underline;
+}
+
+/* prohect grid for mobile like screen*/
+
+@media (max-width:767px){
+    .projects{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
 }
