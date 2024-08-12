@@ -29,7 +29,7 @@ const ProjectPage = () => {
         <div className="projects">
           <Project
             src="src/assets/img2.webp"
-            alt="img snake"
+            alt="img "
             project_title="Intelligent Video Game for Children"
           >
             <DetailleCarte
