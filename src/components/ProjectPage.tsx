@@ -1,6 +1,8 @@
 import { ReactNode } from "react";
 import "../style/project.css";
 import DetailleCarte from "./DetailleCarte";
+import snake from "./assets/snake.png";
+
 interface ProjectProps {
   src: string;
   alt: string;
@@ -26,7 +28,7 @@ const ProjectPage = () => {
     <>
       <div className="main_activity" id="project">
         <div className="projects">
-          <Project src="assets/snake.png" alt="img" project_title="test">
+          <Project src={snake} alt="img" project_title="test">
             <DetailleCarte
               description="test"
               technologis="C, Godot 4"
