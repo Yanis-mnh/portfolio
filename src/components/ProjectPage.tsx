@@ -1,7 +1,6 @@
 import { ReactNode } from "react";
 import "../style/project.css";
 import DetailleCarte from "./DetailleCarte";
-import snakeImg from "./src/assets/snake.png";
 
 interface ProjectProps {
   src: string;
@@ -28,13 +27,14 @@ const ProjectPage = () => {
     <>
       <div className="main_activity" id="project">
         <div className="projects">
-          <Project src={snakeImg} alt="img" project_title="test">
+          <Project src="../src/assets/img1.webp" alt="img" project_title="test">
             <DetailleCarte
               description="test"
               technologis="C, Godot 4"
               link="https://github.com/Yanis-mnh/Snake-compiler"
             />
           </Project>
+
           <Project
             src="src/assets/img2.webp"
             alt="img snake"
