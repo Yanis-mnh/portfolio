@@ -33,7 +33,7 @@ const ProjectPage = () => {
             project_title="test"
           >
             <DetailleCarte
-              description="A compiler for a virtual language named Snake."
+              description="test"
               technologis="C, Godot 4"
               link="https://github.com/Yanis-mnh/Snake-compiler"
             />
