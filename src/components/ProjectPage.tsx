@@ -30,7 +30,7 @@ const ProjectPage = () => {
           <Project
             src="./src/assets/snake.png"
             alt="img snake"
-            project_title="Snake compiler"
+            project_title="test"
           >
             <DetailleCarte
               description="A compiler for a virtual language named Snake."
