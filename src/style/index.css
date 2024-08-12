@@ -25,49 +25,19 @@ body{
 header{
     font-family: 'Roboto' ,sans-serif ;
 }
-
-nav{
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    opacity: 0;
-    
-    transition: opacity .15s ease-in-out;
-    z-index: 10;
-}
-nav:hover{
-    opacity: 1;
-    box-shadow: none;
-}
-
+/*nav bar css start from here*/
 nav ul{
     position: sticky;
     display: inline-flex;
     justify-content: center;
-    width: 50%;
+    
     border-radius: 0 0 10px 10px ;
     padding: 1em;
     gap: 2em;
     background: var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-    transition: width .1s ease-in-out , border-radius .1s ease-in-out;
-
-}
-nav:hover ul{
-    width: 100%;
-    border-radius: 0;
-    transition: width .25s ease-in-out , border-radius .5s ease-in-out;
-}
-.isTop{
-    opacity: 1;
-    width: 100%;
-    border-radius: 0;
-    transition: width .25s ease-in-out , border-radius .5s ease-in-out, opacity .15s ease-in-out;
+    
 }
 .active_page{
     display: block;
@@ -79,9 +49,16 @@ nav:hover ul{
     width: 4em;
     height: 2px;
     transition: background-color .25s ease-in-out;
-
 }
-
+nav{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: sticky;
+    z-index: 10;
+    
+}
 nav ul li{
     position: relative;
     list-style: none;
@@ -93,6 +70,56 @@ nav ul li{
 nav ul li:hover{
     transform: scale(1.1);
 }
+/*nav bar style for desktop*/
+@media(min-width: 767px){
+    nav{
+        opacity: 0;
+        top: 0;
+        transition: opacity .15s ease-in-out;
+
+    }
+    nav ul{
+        width: 50%;
+        transition: width .1s ease-in-out , border-radius .1s ease-in-out;
+    }
+    nav:hover{
+        opacity: 1;
+    }
+    
+    nav:hover ul{
+        width: 100%;
+        border-radius: 0;
+        transition: width .25s ease-in-out , border-radius .5s ease-in-out;
+    }
+    .isTop{
+        opacity: 1;
+        width: 100%;
+        border-radius: 0;
+        transition: width .25s ease-in-out , border-radius .5s ease-in-out, opacity .15s ease-in-out;
+    }
+    
+
+}
+/*nav bar for mobiles*/
+@media(max-width:767px){
+    nav{
+        position: fixed;
+        background-color: black;
+        bottom: 0;
+    }
+    nav ul{
+        width: 100vw;
+        
+    }
+    nav ul li{
+        position: relative;
+        list-style: none;
+        padding:0;
+        color: var(--secondary-color);
+    }
+
+}
+
 
 
 .button {
