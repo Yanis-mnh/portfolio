@@ -26,11 +26,7 @@ const ProjectPage = () => {
     <>
       <div className="main_activity" id="project">
         <div className="projects">
-          <Project
-            src="/portfolio/src/assets/project_image/snake.png"
-            alt="img"
-            project_title="test"
-          >
+          <Project src="assets/snake.png" alt="img" project_title="test">
             <DetailleCarte
               description="test"
               technologis="C, Godot 4"
