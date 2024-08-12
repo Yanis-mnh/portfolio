@@ -28,7 +28,7 @@ const ProjectPage = () => {
       <div className="main_activity" id="project">
         <div className="projects">
           <Project
-            src="./src/assets/snake.png"
+            src="/portfolio/src/assets/snake.png"
             alt="img snake"
             project_title="test"
           >
