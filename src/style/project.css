@@ -78,15 +78,20 @@
     text-decoration: underline;
 }
 
-/* prohect grid for mobile like screen*/
+/* project grid for mobile like screen*/
 
-@media (max-width:800px){
-    .projects{
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        gap: .5em;
+@media (max-width: 800px) {
+    .projects {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 0.5em;
     }
-    .project{
-        width: 400px;
-        height: 500px;
+    .project {
+        width: auto;
+        height: auto;
+    }
+    .project img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; 
     }
 }
