@@ -23,12 +23,13 @@ const Project: React.FC<ProjectProps> = ({
   );
 };
 const ProjectPage = () => {
+  const baseUrl: string = import.meta.env.BASE_URL;
   return (
     <>
       <div className="main_activity" id="project">
         <div className="projects">
           <Project
-            src="./img2.webp"
+            src={baseUrl + "/projectImages/snake.png"}
             alt="img "
             project_title="Intelligent Video Game for Children"
           >
@@ -39,22 +40,14 @@ const ProjectPage = () => {
             />
           </Project>
           <Project
-            src="src/assets/img3.avif"
+            src={baseUrl + "projectImages/img3.avif"}
             alt="img snake"
             project_title="Snake compiler"
           >
             <DetailleCarte description="" technologis="" link="" />
           </Project>
           <Project
-            src="src/assets/snake.png"
-            alt="img snake"
-            project_title="Snake compiler"
-          >
-            <DetailleCarte description="" technologis="" link="" />
-          </Project>
-
-          <Project
-            src="src/assets/snake.png"
+            src={import.meta.env.BASE_URL + "projectImages/snake.png"}
             alt="img snake"
             project_title="Snake compiler"
           >
@@ -62,7 +55,7 @@ const ProjectPage = () => {
           </Project>
 
           <Project
-            src="src/assets/snake.png"
+            src={baseUrl + "projectImages/snake.png"}
             alt="img snake"
             project_title="Snake compiler"
           >
@@ -70,7 +63,15 @@ const ProjectPage = () => {
           </Project>
 
           <Project
-            src="src/assets/snake.png"
+            src={baseUrl + "projectImages/snake.png"}
+            alt="img snake"
+            project_title="Snake compiler"
+          >
+            <DetailleCarte description="" technologis="" link="" />
+          </Project>
+
+          <Project
+            src={baseUrl + "projectImages/snake.png"}
             alt="img snake"
             project_title="Snake compiler"
           >

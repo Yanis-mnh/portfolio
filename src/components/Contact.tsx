@@ -1,24 +1,25 @@
 import "../style/contact.css";
 const Contact = () => {
+  const baseUrl: string = import.meta.env.BASE_URL;
   return (
     <>
       <div className="contact" id="contact">
         <div className="contact_container">
           <div className="social_media">
             <a href="https://www.instagram.com/yanix.code/" target="blank">
-              <img src="src/assets/icons/instagram.png" alt="facebook_icon" />
+              <img src={baseUrl + "icons/instagram.png"} alt="insta_icon" />
             </a>
             <a
               href="https://www.facebook.com/profile.php?id=61564108437013&locale=fr_FR"
               target="blank"
             >
-              <img src="src/assets/icons/facebook.png" alt="insta_icon" />
+              <img src={baseUrl + "icons/facebook.png"} alt="insta_icon" />
             </a>
             <a target="blank" href="https://github.com/Yanis-mnh">
-              <img src="src/assets/icons/github.png" alt="gmail_icon" />
+              <img src={baseUrl + "icons/github.png"} alt="gmail_icon" />
             </a>
             <a href="mailto:yanix.code@gmail.com">
-              <img src="src/assets/icons/gmail.png" alt="gmail_icon" />
+              <img src={baseUrl + "icons/gmail.png"} alt="gmail_icon" />
             </a>
           </div>
 
