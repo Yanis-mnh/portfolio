@@ -82,10 +82,11 @@
 
 @media (max-width:767px){
     .projects{
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: .5em;
     }
     .project{
-        width: 200px;
+        width: 400px;
+        height: 500px;
     }
 }
