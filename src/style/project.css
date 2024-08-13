@@ -10,9 +10,7 @@
     justify-content: center;
     column-gap: 2em;
     row-gap: 1em;
-    overflow: visible;
-    margin-inline: 200px;
-    background-color: black;
+
 }
 .project{
     position: relative;
@@ -28,8 +26,12 @@
     transition: transform .1s ease-in-out;
     
 }
+@media(min-width:800px){
+    .project:hover{
+        transform: scale(1.03,1.03);
+    }    
+}
 .project:hover{
-    transform: scale(1.03,1.03);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -80,7 +82,10 @@
 
 @media (max-width:767px){
     .projects{
-        grid-template-columns: repeat(2,1fr);
-        
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1em;
+    }
+    .project{
+        width: 200px;
     }
 }
