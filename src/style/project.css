@@ -11,6 +11,8 @@
     column-gap: 2em;
     row-gap: 1em;
     overflow: visible;
+    margin-inline: 200px;
+    background-color: black;
 }
 .project{
     position: relative;
