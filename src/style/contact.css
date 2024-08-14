@@ -77,7 +77,7 @@
 
     .contact_container{
         flex-direction: column;
-        min-height: 80%;
+        min-height: auto;
         min-width: 90%;
     }
     .social_media{
@@ -94,7 +94,7 @@
     }
     #message{
         min-width: 80%;
-        min-height:5em;
+        min-height:10em;
         max-width: 80%;
         max-height: 20em;
         padding: 10px;
