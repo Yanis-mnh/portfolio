@@ -21,24 +21,12 @@
 body,html{
     background-color: var(--background-color);
     
-    
 }
 header{
     font-family: 'Roboto' ,sans-serif ;
 }
 /*nav bar css start from here*/
-nav ul{
-    display: inline-flex;
-    justify-content: center;
-    
-    border-radius: 0 0 10px 10px ;
-    padding: 1em;
-    gap: 2em;
-    background: var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-    
-}
+
 .active_page{
     display: block;
     position: absolute;
@@ -58,44 +46,56 @@ nav{
     position: sticky;
     z-index: 10;
     
-}
-nav ul li{
-    position: relative;
-    list-style: none;
-    padding: 1em 2em;
-    cursor: pointer;
-    color: var(--secondary-color);
+    & ul{
+        display: inline-flex;
+        justify-content: center;
+        margin-inline: .5em;
+        gap: 2em;
+        background: var(--primary-color);
+        border-bottom: 2px solid var(--primary-color);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); 
+    }
+    
+    & ul li{
+        position: relative;
+        list-style: none;
+        padding: 1em 2em;
+        cursor: pointer;
+        color: var(--secondary-color);
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+    
 }
 
-nav ul li:hover{
-    transform: scale(1.1);
-}
+
+
 /*nav bar style for desktop*/
 @media(min-width: 800px){
     nav{
         opacity: 0;
         top: 0;
         transition: opacity .15s ease-in-out;
+        & ul{
+            width: 25%;
+            transition: width .1s ease-in-out;
+        }
+        &:hover{
+            opacity: 1;
+        }
+        &:hover ul{
+            width: 100%;
+            border-radius: 0;
+            transition: width .25s ease-in-out , border-radius .5s ease-in-out;
+        }
 
     }
-    nav ul{
-        width: 50%;
-        transition: width .1s ease-in-out , border-radius .1s ease-in-out;
-    }
-    nav:hover{
-        opacity: 1;
-    }
-    
-    nav:hover ul{
-        width: 100%;
-        border-radius: 0;
-        transition: width .25s ease-in-out , border-radius .5s ease-in-out;
-    }
+
     .isTop{
         opacity: 1;
         width: 100%;
-        border-radius: 0;
-        transition: width .25s ease-in-out , border-radius .5s ease-in-out, opacity .15s ease-in-out;
+        transition: width .25s ease-in-out , opacity .15s ease-in-out;
     }
     
 
@@ -108,21 +108,23 @@ nav ul li:hover{
         bottom: 0;
         left: 50%;
         transform: translate(-50%,0);        
-        
         opacity: .95;
         margin: 10px;
-    }
-    nav ul{
-        border-radius: 2em;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
-
+        & ul{
+            padding: .5em 1em;
+            border-radius: 2em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+            & li{
+                list-style: none;
+                padding:0;
+                color: var(--secondary-color);
+            }
+    
+        }
     }
     
-    nav ul li{
-        list-style: none;
-        padding:0;
-        color: var(--secondary-color);
-    }
+    
+    
     .active_page{
         display: block;
         position: absolute;
