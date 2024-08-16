@@ -22,14 +22,6 @@ const About = () => {
             <li>Tools & Technologies: AIVA, Zsh, Ubuntu, Git.</li>
           </ul>
         </div>
-        <div className="div3_education">
-          <h2>Education</h2>
-          Master's Degree in Systèmes d'Information et Données University Name |
-          2024 - Present Focus on information systems, data analysis, and
-          software development. Bachelor's Degree in Computer Systems University
-          Name | Completed in 2024 Graduated without any retakes; final project:
-          Intelligent Video Game for Children.
-        </div>
       </div>
     </>
   );

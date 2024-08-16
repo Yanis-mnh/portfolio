@@ -14,7 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: 'Roboto',sans-serif;
 }
 
 
@@ -77,8 +77,10 @@ nav{
         opacity: 0;
         top: 0;
         transition: opacity .15s ease-in-out;
+        
         & ul{
             width: 25%;
+            border: 1px solid rgba(0, 0, 0, 0.274);
             transition: width .1s ease-in-out;
         }
         &:hover{
