@@ -1,7 +1,5 @@
 .about{
     height: auto;
-    background-color: pink;
-    height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr .25fr;
@@ -21,9 +19,9 @@
 /* Desktop Layout: 3 Columns */
 @media(min-width: 800px) {
     .about {
+      height: 95vh;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr .25fr;
-      margin: 30px;
       margin-bottom: 100px;
       justify-content: center;
       align-items: center;
@@ -42,7 +40,7 @@
         width: auto;
         height: 10em;
         border-radius: 100%;
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1);
         transition: transform .1s ease-in-out;
         &:hover{
           transform: scale(1.01);

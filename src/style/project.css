@@ -62,7 +62,6 @@
 }
 
 .project:hover  .detaille {
-    
     visibility: visible;
     overflow: hidden;
     background-color: var(--background-color);
