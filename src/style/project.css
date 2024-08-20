@@ -26,11 +26,7 @@
     transition: transform .1s ease-in-out;
     
 }
-@media(min-width:800px){
-    .project:hover{
-        transform: scale(1.03,1.03);
-    }    
-}
+
 .project:hover{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 }
@@ -58,19 +54,8 @@
     border: none;
     height: 100%;
     width: 0%;
+    color: #ffffff00;
     
-}
-
-.project:hover  .detaille {
-    visibility: visible;
-    overflow: hidden;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    backdrop-filter: blur(10px);
-    width: 100%;
-    transition: width .1s ease-in-out;
-}
-.detaille {
     & p{
         text-align: left;
         margin: 10px ;
@@ -82,8 +67,31 @@
     }
 }
 
+
+.project:hover  {
+    & .detaille {
+        visibility: visible;
+        overflow: hidden;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        backdrop-filter: blur(10px);
+        width: 100%;
+        transition: width .1s ease-in-out;
+    }
+    
+}
+
+
 .carte_title{
     text-decoration: underline;
+    font-weight: bold;
+}
+
+/*Desktop style*/
+@media(min-width:800px){
+    .project:hover{
+        transform: scale(1.03,1.03);
+    }    
 }
 
 /* project grid for mobile like screen*/
