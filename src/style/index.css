@@ -1,11 +1,23 @@
 
-:root{
-    --background-color: #EDF2F7;
-    --primary-color: #a0aec081;
+/* Default (Light Mode) */
+:root {
+    --background-color: rgba(23, 25, 35, 0.9);
+    --primary-color: rgba(45, 55, 72, .9);
     --secondary-color: #f7f9f9;
-    --accent-color: #3498db;
-    --dark-accent-color: #2980b9;
-    --text-color: #171923;
+    --accent-color: #4A5568;
+    --dark-accent-color: #2D3748;
+    --text-color: #EDF2F7;
+}
+
+/* light Mode */
+[data-theme="light"] {
+    --background-color: #F7F9F9;
+    --primary-color: #EDF2F7;
+    --secondary-color: rgba(45, 55, 72, 0.9);
+    --accent-color: #2D3748;
+    --dark-accent-color: #1A202C;
+    --text-color: #2D3748;
+
 }
 
 
@@ -82,6 +94,7 @@ nav{
         & ul{
             width: 25%;
             transition: width .1s ease-in-out;
+            padding: .25em 0;
             border: none;
         }
         &:hover{
@@ -182,12 +195,11 @@ a{
     background-color: var(--accent-color);
     font-weight: bold;
     border-radius: 2px;
-    padding: .25em;
     
     
 }
 a:hover{
     background-color: var(--dark-accent-color);
     color: var(--secondary-color);
-    transition: background-color .1s ease-in-out;
+    transition: background-color .1s ease-in-out,color .1s ease-in-out;
 }
