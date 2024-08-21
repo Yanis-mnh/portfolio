@@ -4,7 +4,14 @@
     background-color: rgba(0, 0, 0, 0.308);
     & a{
         background-color: transparent;
-        margin-inline: 30px;
+        margin-inline: 1em;
 
+    }
+    
+}
+/*mobile design*/
+@media(max-width: 800px){
+    .contact_container {
+        padding-bottom: 4em;
     }
 }
