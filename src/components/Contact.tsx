@@ -3,7 +3,7 @@ const Contact = () => {
   const baseUrl: string = import.meta.env.BASE_URL;
   return (
     <>
-      <footer className="contact_container">
+      <footer className="contact_container" id="contact">
         <a href="https://www.instagram.com/yanix.code/" target="blank">
           <img src={baseUrl + "icons/instagram.png"} alt="insta_icon" />
         </a>

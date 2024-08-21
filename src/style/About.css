@@ -102,4 +102,17 @@
 }  
 .div1_about_me,.div2_skills{
     padding: 20px;
+    margin: 10px;
+}
+
+.div2_skills{
+  margin: auto;
+  text-align: center;
+  text-decoration: underline;
+  
+}
+.div2_skills img{
+  height: 64px;
+  width: 64px;
+  margin-inline: 10px;
 }

@@ -1,0 +1,10 @@
+.contact_container{
+    display: flex;
+    
+    background-color: rgba(0, 0, 0, 0.308);
+    & a{
+        background-color: transparent;
+        margin-inline: 30px;
+
+    }
+}
