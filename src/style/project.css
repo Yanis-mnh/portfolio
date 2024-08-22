@@ -98,7 +98,6 @@
 
 @media (max-width: 800px) {
     .projects {
-        margin: 1em;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 0.5em;
         outline-color: transparent;
