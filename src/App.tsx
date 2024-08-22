@@ -6,6 +6,7 @@ import ProjectPage from "./components/ProjectPage";
 function App() {
   return (
     <>
+      <div id="top-page"></div>
       <div>
         <NavBar />
         <About />

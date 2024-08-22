@@ -85,7 +85,7 @@ nav{
 
 
 /*nav bar style for desktop*/
-@media(min-width: 800px){
+@media(min-width: 801px){
     nav{
         opacity: 0;
         top: 0;

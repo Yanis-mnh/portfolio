@@ -17,7 +17,7 @@
   
 
 /* Desktop Layout: 3 Columns */
-@media(min-width: 800px) {
+@media(min-width: 801px) {
     .about {
       height: 95vh;
       grid-template-columns: 1fr;

@@ -8,7 +8,7 @@ const GoUpBtn: React.FC<props> = ({ onButtonClick, changeNavActivePage }) => {
     <>
       <button
         onClick={() => {
-          onButtonClick("navbar");
+          onButtonClick("top-page");
           changeNavActivePage(0);
         }}
         className="button go_up_btn"

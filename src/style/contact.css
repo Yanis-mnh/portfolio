@@ -27,6 +27,13 @@
     
 }
 
+/*desktop UI/UX*/
+@media(min-width:800px){
+    .contact_container a:hover{
+        transform: scale(1.05);
+    }
+}
+
 /*mobile design*/
 @media(max-width: 800px){
     .contact_container {
