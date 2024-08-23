@@ -88,31 +88,32 @@ nav{
 /*nav bar style for desktop*/
 @media(min-width: 801px){
     nav{
-        opacity: 0;
         top: 0;
-        transition: opacity .15s ease-in-out;
+        height: auto;
+        height: 3em;
+        overflow: visible;
+        transition: top .15s ease-in-out;
         border: none;
         & ul{
-            width: 25%;
-            transition: width .1s ease-in-out;
+            position: absolute;
+            top: -5em;
+            width: 100%;
             padding: .25em 0;
             border: none;
+            transition: top .25s ease-in-out .25s;
         }
-        &:hover{
-            opacity: 1;
-        }
+        
         &:hover ul{
-            width: 100%;
-            border-radius: 0;
-            transition: width .1s ease-in-out ;
+            top: 0;
+            transition: top .25s ease-in-out;
         }
 
     }
 
     .isTop{
-        opacity: 1;
-        width: 100%;
-        transition: width .25s ease-in-out , opacity .15s ease-in-out;
+        top: 0;
+        border-radius: 0;
+        transition: width .1s ease-in-out ;
     }
     
 
