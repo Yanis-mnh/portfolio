@@ -44,40 +44,40 @@ const HandelClickImg = (countre: number, SetCounter: CallableFunction) => {
     case 3:
       Notify("I can see that you like the logo!", 3000);
       break;
-    case 5:
+    case 10:
       Notify("Okay, you love it, I got it!", 4000);
       break;
-    case 7:
+    case 15:
       Notify("You're really into this, huh?", 3500);
       break;
-    case 10:
+    case 20:
       Notify("Wow, it's becoming an obsession!", 5000);
       break;
-    case 12:
+    case 30:
       Notify("Are you trying to break the logo?", 4500);
       break;
-    case 15:
+    case 40:
       Notify("Please, you can stop now...", 6000);
       break;
-    case 18:
+    case 55:
       Notify("The logo appreciates your enthusiasm!", 5500);
       break;
-    case 20:
+    case 70:
       Notify("Sorry, but the logo can't love you back...", 7000);
       break;
-    case 25:
+    case 85:
       Notify("At this point, the logo should start paying you rent!", 8000);
       break;
-    case 30:
+    case 100:
       Notify("You're still here? Maybe try clicking something else?", 9000);
       break;
-    case 35:
+    case 120:
       Notify("You're determined, I'll give you that!", 10000);
       break;
-    case 40:
+    case 140:
       Notify("Alright, last warning: the logo is getting dizzy...", 11000);
       break;
-    case 50:
+    case 160:
       Notify(
         "Okay, you've officially won the 'Most Persistent Clicker' award!",
         12000
