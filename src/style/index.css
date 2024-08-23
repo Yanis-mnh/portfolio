@@ -52,13 +52,14 @@ header{
     transition: background-color .25s ease-in-out;
 }
 nav{
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    position: sticky;
+    width: 100vw;
     z-index: 10;
-    
     & ul{
+        
         display: inline-flex;
         justify-content: center;
         gap: 2em;
@@ -120,7 +121,7 @@ nav{
 @media(max-width:800px){
     
     nav{
-        position: fixed;
+        
         bottom: 0;
         left: 50%;
         transform: translate(-50%,0);        
