@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import projectsData from "../project.json";
 import "../style/project.css";
 import DetailleCarte from "./DetailleCarte";
 
@@ -24,59 +25,25 @@ const Project: React.FC<ProjectProps> = ({
 };
 const ProjectPage = () => {
   const baseUrl: string = import.meta.env.BASE_URL;
+
   return (
     <>
       <div className="main_activity" id="project">
         <div className="projects">
-          <Project
-            src={baseUrl + "/projectImages/snake.png"}
-            alt="img "
-            project_title="Intelligent Video Game for Children"
-          >
-            <DetailleCarte
-              description="A compiler for a virtual language named Snake."
-              technologis="C, Godot 4"
-              link="https://github.com/Yanis-mnh/Snake-compiler"
-            />
-          </Project>
-          <Project
-            src={baseUrl + "projectImages/img3.avif"}
-            alt="img snake"
-            project_title="Snake compiler"
-          >
-            <DetailleCarte description="" technologis="" link="" />
-          </Project>
-          <Project
-            src={import.meta.env.BASE_URL + "projectImages/snake.png"}
-            alt="img snake"
-            project_title="Snake compiler"
-          >
-            <DetailleCarte description="" technologis="" link="" />
-          </Project>
-
-          <Project
-            src={baseUrl + "projectImages/snake.png"}
-            alt="img snake"
-            project_title="Snake compiler"
-          >
-            <DetailleCarte description="" technologis="" link="" />
-          </Project>
-
-          <Project
-            src={baseUrl + "projectImages/snake.png"}
-            alt="img snake"
-            project_title="Snake compiler"
-          >
-            <DetailleCarte description="" technologis="" link="" />
-          </Project>
-
-          <Project
-            src={baseUrl + "projectImages/snake.png"}
-            alt="img snake"
-            project_title="Snake compiler"
-          >
-            <DetailleCarte description="" technologis="" link="" />
-          </Project>
+          {projectsData.map((project, index) => (
+            <Project
+              key={index}
+              src={baseUrl + project["image-src"]}
+              alt={`${project.img_alt}`}
+              project_title={project.title}
+            >
+              <DetailleCarte
+                description={project.description}
+                technologis={project.technologies}
+                link={project.link}
+              />
+            </Project>
+          ))}
         </div>
       </div>
     </>
