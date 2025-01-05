@@ -33,7 +33,7 @@ const ProjectPage = () => {
           {projectsData.map((project, index) => (
             <Project
               key={index}
-              src={baseUrl + project["image-src"]}
+              src={project["image-src"]}
               alt={`${project.img_alt}`}
               project_title={project.title}
             >

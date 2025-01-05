@@ -2,7 +2,7 @@
   {
     "title": "smart cubs",
     "description": "An intelligent video game for children to enhance cognitive skills.",
-    "image-src": "public/projectImages/smart-cub-logo.webp",
+    "image-src": "projectImages/smart-cub-logo.webp",
     "img_alt": "logo of smart cubs app",
     "technologies": "Godot3.5, Python3, Krita",
     "link": "https://github.com/SmartCubs/SmartCubs",
