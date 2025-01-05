@@ -11,7 +11,7 @@
   {
     "title": "Snake Compiler",
     "description": "A small compiler to learn how compilers work; it's a university project.",
-    "image-src": "public/projectImages/snake.png",
+    "image-src": "/projectImages/snake.png",
     "img_alt": "logo of snake complier",
     "technologies": "C, Express, MongoDB",
     "link": "https://techblog.com",
