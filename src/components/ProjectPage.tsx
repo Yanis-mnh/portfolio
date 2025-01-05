@@ -24,7 +24,7 @@ const Project: React.FC<ProjectProps> = ({
   );
 };
 const ProjectPage = () => {
-  const baseUrl: string = import.meta.env.BASE_URL;
+  const baseUrl: string = import.meta.env.PUBLIC_URL;
 
   return (
     <>
