@@ -2,7 +2,7 @@
   {
     "title": "smart cubs",
     "description": "An intelligent video game for children to enhance cognitive skills.",
-    "image-src": "/projectImages/smart-cub-logo.webp",
+    "image-src": "public/projectImages/smart-cub-logo.webp",
     "img_alt": "logo of smart cubs app",
     "technologies": "Godot3.5, Python3, Krita",
     "link": "https://github.com/SmartCubs/SmartCubs",
@@ -11,7 +11,7 @@
   {
     "title": "Snake Compiler",
     "description": "A small compiler to learn how compilers work; it's a university project.",
-    "image-src": "/projectImages/snake.png",
+    "image-src": "public/projectImages/snake.png",
     "img_alt": "logo of snake complier",
     "technologies": "C, Express, MongoDB",
     "link": "https://techblog.com",
