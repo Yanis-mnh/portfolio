@@ -13,9 +13,18 @@
     "description": "A small compiler to learn how compilers work; it's a university project.",
     "image-src": "projectImages/snake.png",
     "img_alt": "logo of snake complier",
-    "technologies": "C, Express, MongoDB",
-    "link": "https://techblog.com",
+    "technologies": "C, Godot4",
+    "link": "https://github.com/Yanis-mnh/Snake-compiler",
     "linkName": "Github repo"
+  },
+  {
+    "title": "Fit Notes",
+    "description": "An app where you can track your workouts.",
+    "image-src": "projectImages/fit_notes_logo.webp",
+    "img_alt": "no logo yet ",
+    "technologies": "Godot4 , Json",
+    "link": "https://github.com/Yanis-mnh/fit-notes",
+    "linkName": "Link to the App"
   },
   {
     "title": "Cryptic Door",
@@ -23,7 +32,16 @@
     "image-src": "link_to img",
     "img_alt": "no logo yet ",
     "technologies": "Godot4 , Blender",
-    "link": "https://techblog.com",
+    "link": " ",
+    "linkName": "Github repo"
+  },
+  {
+    "title": "Tower Dash",
+    "description": "A hyper-casual mobile game where you need to climb a tower",
+    "image-src": "link_to img",
+    "img_alt": "no logo yet ",
+    "technologies": "Godot4 , Blender , ",
+    "link": " ",
     "linkName": "Github repo"
   }
 ]

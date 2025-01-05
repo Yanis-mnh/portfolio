@@ -39,6 +39,7 @@ const ProjectPage = () => {
                 description={project.description}
                 technologis={project.technologies}
                 link={project.link}
+                linkName={project.linkName}
               />
             </Project>
           ))}

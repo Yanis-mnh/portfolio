@@ -20,7 +20,7 @@ const DetailleCarte: React.FC<DetailleCarteProps> = ({
         <p>
           <b className="carte_title">Technologies:</b> {technologis}
         </p>
-        <a href={link}>
+        <a href={link} target="_blank">
           <b className="carte_title">link: </b>
           {linkName}
         </a>
