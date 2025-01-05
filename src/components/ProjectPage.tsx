@@ -24,8 +24,6 @@ const Project: React.FC<ProjectProps> = ({
   );
 };
 const ProjectPage = () => {
-  const baseUrl: string = import.meta.env.BASE_URL;
-
   return (
     <>
       <div className="main_activity" id="project">
