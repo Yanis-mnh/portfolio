@@ -29,7 +29,7 @@
   {
     "title": "Cryptic Door",
     "description": "A small 3D game where you play as a mad scientist trapped in a tragic world.",
-    "image-src": "link_to img",
+    "image-src": "projectImages/no-pictures.png",
     "img_alt": "no logo yet ",
     "technologies": "Godot4 , Blender",
     "link": " ",
@@ -38,7 +38,7 @@
   {
     "title": "Tower Dash",
     "description": "A hyper-casual mobile game where you need to climb a tower",
-    "image-src": "link_to img",
+    "image-src": "projectImages/no-pictures.png",
     "img_alt": "no logo yet ",
     "technologies": "Godot4 , Blender , ",
     "link": " ",
