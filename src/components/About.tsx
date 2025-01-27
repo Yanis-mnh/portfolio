@@ -9,11 +9,10 @@ const About = () => {
       <div className="about" id="about">
         <div className="div1_about_me">
           <div className="about_text">
-            <h2>Hi, I'm Yanis</h2>
+            <h2>Welcome to my portfolio.</h2>
             <p>
-              a master's student in Information Systems and Data. With a strong
-              passion for video game development and software creation, I enjoy
-              turning complex problems into simple, elegant solutions.
+              Here you'll find a collection of my work in software development
+              and game creation.
             </p>
           </div>
           <img
