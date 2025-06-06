@@ -11,7 +11,7 @@ const Contact = () => {
           <a target="blank" href="https://github.com/Yanis-mnh">
             <img src={baseUrl + "icons/github.png"} alt="gmail_icon" />
           </a>
-          <a href="mail:mounnah.yanis2002@gmail.com">
+          <a href="mailto:mounnah.yanis2002@gmail.com">
             <img src={baseUrl + "icons/gmail.png"} alt="gmail_icon" />
           </a>
         </div>
