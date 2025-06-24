@@ -26,13 +26,13 @@
     "link": "https://github.com/Yanis-mnh/fit-notes",
     "linkName": "Link to the App"
   },
-    {
+  {
     "title": "Moyenne Calculateur",
     "description": "une webApp pour faciliter le calcule de la moyenne pour les etudiants  ",
     "image-src": "projectImages/Moyenne-calculateur.png",
     "img_alt": "no logo yet ",
     "technologies": "React + ts + vite",
-    "link": "https://yanis-mnh.github.io/moyenne-calculateur/",
+    "link": "https://moyenne-calculateur.vercel.app/",
     "linkName": "Go to web site"
   },
   {
