@@ -1,7 +1,16 @@
 [
   {
+    "title": "Rovia",
+    "description": "A modern AI-powered marketplace that connects buyers and sellers with real-time messaging, voice and video calls, personalized recommendations, and secure authentication.",
+    "image-src": "/projectImages/rovia-logo.webp",
+    "img_alt": "logo of Rovia",
+    "technologies": "Next.js, TypeScript, Tailwind CSS, Supabase, PostgreSQL",
+    "link": "https://rovia-delta.vercel.app/",
+    "linkName": "Visit website"
+  },
+  {
     "title": "smart cubs",
-    "description": "An intelligent video game for children to enhance cognitive skills.",
+    "description": "An educational game designed to help children develop cognitive and problem-solving skills through interactive learning experiences.",
     "image-src": "/projectImages/smart-cub-logo.webp",
     "img_alt": "logo of smart cubs app",
     "technologies": "Godot3.5, Python3, Krita",
@@ -10,7 +19,7 @@
   },
   {
     "title": "Snake Compiler",
-    "description": "A small compiler to learn how compilers work; it's a university project.",
+    "description": "A university project focused on building a simple compiler to better understand compiler design, parsing, and code generation.",
     "image-src": "/projectImages/snake.png",
     "img_alt": "logo of snake complier",
     "technologies": "C, Godot4",
@@ -19,7 +28,7 @@
   },
   {
     "title": "Fit Notes",
-    "description": "An app where you can track your workouts.",
+    "description": "A workout tracking application that helps users log exercises, monitor progress, and organize their fitness routines.",
     "image-src": "/projectImages/fit_notes_logo.webp",
     "img_alt": "no logo yet ",
     "technologies": "Godot4 , Json",
@@ -28,7 +37,7 @@
   },
   {
     "title": "Moyenne Calculateur",
-    "description": "une webApp pour faciliter le calcule de la moyenne pour les etudiants  ",
+    "description": "A web application that simplifies grade average calculations, making it easier for students to quickly estimate their academic results.",
     "image-src": "/projectImages/Moyenne-calculateur.png",
     "img_alt": "no logo yet ",
     "technologies": "React + ts + vite",
@@ -37,7 +46,7 @@
   },
   {
     "title": "Cryptic Door",
-    "description": "A small 3D game where you play as a mad scientist trapped in a tragic world.",
+    "description": "A short 3D psychological adventure where you play as a mad scientist navigating a mysterious and tragic world filled with secrets.",
     "image-src": "/projectImages/no-pictures.png",
     "img_alt": "no logo yet ",
     "technologies": "Godot4 , Blender",
@@ -46,7 +55,7 @@
   },
   {
     "title": "Tower Dash",
-    "description": "A hyper-casual mobile game where you need to climb a tower",
+    "description": "A fast-paced hyper-casual mobile game where players climb an endless tower while avoiding obstacles and aiming for the highest score.",
     "image-src": "/projectImages/no-pictures.png",
     "img_alt": "no logo yet ",
     "technologies": "Godot4 , Blender , ",
