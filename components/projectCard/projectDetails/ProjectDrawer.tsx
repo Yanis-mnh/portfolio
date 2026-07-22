@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { Card, CardDescription } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import {
   DrawerContent,
   DrawerDescription,
@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/drawer";
 import projects from "@/project.json";
 import Image from "next/image";
+import Link from "next/link";
 
 type ProjectDrawerProp = {
   index: number | null;
@@ -21,7 +22,7 @@ const ProjectDrawer = ({ index }: ProjectDrawerProp) => {
   const project = projects[index];
   return (
     <>
-      <DrawerContent className="flex-1 scroll-fade overflow-y-auto overflow-x-hidden p-4">
+      <DrawerContent className="flex-1 gap-10 scroll-fade overflow-y-auto overflow-x-hidden p-4">
         <DrawerHeader>
           <DrawerTitle>{project.title}</DrawerTitle>
         </DrawerHeader>
@@ -34,6 +35,11 @@ const ProjectDrawer = ({ index }: ProjectDrawerProp) => {
           />
         </Card>
         <DrawerDescription>{project.description}</DrawerDescription>
+
+        {/** link to project */}
+        <Link target="_blank" href={project.link} className="my-2">
+          {"test it here: " + project.linkName}
+        </Link>
 
         <DrawerFooter>
           {/** tech used in the project */}
