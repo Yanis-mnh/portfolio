@@ -26,7 +26,7 @@ const ProjectDrawer = ({ index }: ProjectDrawerProp) => {
         <DrawerHeader>
           <DrawerTitle>{project.title}</DrawerTitle>
         </DrawerHeader>
-        <Card className="relative aspect-video w-full overflow-hidden">
+        <Card className="relative aspect-square w-full overflow-hidden">
           <Image
             src={"/portfolio" + project["image-src"]}
             alt={project.img_alt}
@@ -38,7 +38,7 @@ const ProjectDrawer = ({ index }: ProjectDrawerProp) => {
 
         {/** link to project */}
         <Link target="_blank" href={project.link} className="my-2">
-          {"test it here: " + project.linkName}
+          {project.linkName}
         </Link>
 
         <DrawerFooter>
