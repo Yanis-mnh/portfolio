@@ -1,17 +1,35 @@
-import React from "react";
+"use client";
+import { useState } from "react";
 import { Card, CardContent, CardFooter } from "../ui/card";
 import Image from "next/image";
 import projects from "@/project.json";
+import { Drawer, DrawerTrigger } from "@/components/ui/drawer";
+import ProjectDrawer from "./projectDetails/ProjectDrawer";
+import { useIsMobile } from "@/hooks/useMobile";
 
 const ProjectCard = () => {
+  const [open, setOpen] = useState(false);
+  const [index, setIndex] = useState<number | null>(null);
+  const isMobile = useIsMobile();
   return (
-    <div id="projects">
-      <p className="text-3xl mx-6 underline" >My Projects </p>
-      <main className="grid grid-cols-1 gap-6 p-4 sm:grid-cols-2 sm:p-6 lg:grid-cols-3 lg:p-8">
+    <Drawer
+      open={open}
+      onOpenChange={setOpen}
+      showSwipeHandle={isMobile}
+      swipeDirection={isMobile ? "down" : "right"}
+    >
+      <p id="projects" className="text-3xl mx-6 underline">
+        My Projects{" "}
+      </p>
+      <DrawerTrigger className="grid grid-cols-1 gap-6 p-4 sm:grid-cols-2 sm:p-6 lg:grid-cols-3 lg:p-8">
         {projects.map((project, index) => (
           <Card
             key={index}
             className="group overflow-hidden transition-shadow hover:shadow-lg focus-within:shadow-lg"
+            onClick={() => {
+              setIndex(index);
+              console.log(index);
+            }}
           >
             <CardContent className="p-0">
               <div className="relative aspect-4/3 w-full overflow-hidden bg-muted">
@@ -36,8 +54,9 @@ const ProjectCard = () => {
             </CardFooter>
           </Card>
         ))}
-      </main>
-    </div>
+      </DrawerTrigger>
+      <ProjectDrawer index={index} />
+    </Drawer>
   );
 };
 

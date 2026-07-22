@@ -2,7 +2,7 @@
   {
     "title": "Rovia",
     "description": "A modern AI-powered marketplace that connects buyers and sellers with real-time messaging, voice and video calls, personalized recommendations, and secure authentication.",
-    "image-src": "/projectImages/rovia-logo.svg",
+    "image-src": "/projectImages/rovia-logo.png",
     "img_alt": "logo of Rovia",
     "technologies": [
       "Next.js",
